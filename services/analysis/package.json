@@ -1,0 +1,9 @@
+{
+  "name": "analysis",
+  "scripts": {
+    "dev": "uv run uvicorn main:app --reload --port 8005",
+    "test": "uv run pytest",
+    "lint": "uv run ruff check .",
+    "build": "echo 'no build step'"
+  }
+}

@@ -1,0 +1,43 @@
+version = 1
+revision = 3
+requires-python = ">=3.14"
+
+[manifest]
+members = [
+    "analysis",
+    "gateway",
+    "ingestion",
+    "model-router",
+    "output",
+    "shared-types",
+]
+
+[[package]]
+name = "analysis"
+version = "0.1.0"
+source = { virtual = "services/analysis" }
+
+[[package]]
+name = "gateway"
+version = "0.1.0"
+source = { virtual = "services/gateway" }
+
+[[package]]
+name = "ingestion"
+version = "0.1.0"
+source = { virtual = "services/ingestion" }
+
+[[package]]
+name = "model-router"
+version = "0.1.0"
+source = { editable = "packages/model-router" }
+
+[[package]]
+name = "output"
+version = "0.1.0"
+source = { virtual = "services/output" }
+
+[[package]]
+name = "shared-types"
+version = "0.1.0"
+source = { editable = "packages/shared-types" }

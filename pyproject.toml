@@ -1,0 +1,6 @@
+[tool.uv.workspace]
+members = [
+  "services/*",
+  "packages/shared-types",
+  "packages/model-router",
+]
